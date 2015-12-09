@@ -11,7 +11,7 @@ import UIKit
 class PageViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     
-    let pageTitles = ["Walk Tracker", "Hydra8", "Heart Rate", "Foodie?"]
+    let pageTitles = ["Walk Tracker", "Hydra8", "Heart Rate", "Foodie"]
     var images = ["long3.png","long4.png","long1.png","long2.png"]
     var count = 0
     
