@@ -22,8 +22,8 @@
 		418D9C721C18B2AC0005CCDC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C711C18B2AC0005CCDC /* MapViewController.swift */; };
 		418D9C741C18B3280005CCDC /* WalksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C731C18B3280005CCDC /* WalksViewController.swift */; };
 		418D9C771C18C5F60005CCDC /* AnimatedStartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C761C18C5F60005CCDC /* AnimatedStartButton.swift */; };
-		418D9C7E1C18CB130005CCDC /* walktracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C7C1C18CB130005CCDC /* walktracker.xcdatamodeld */; };
-		418D9C821C18CB840005CCDC /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C801C18CB840005CCDC /* Walk.swift */; };
+		418D9C8D1C18CE500005CCDC /* walktracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C7C1C18CB130005CCDC /* walktracker.xcdatamodeld */; };
+		418D9C951C18D0530005CCDC /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C931C18D0530005CCDC /* Walk.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +67,7 @@
 		418D9C751C18B5A90005CCDC /* CMPE297Health-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CMPE297Health-Bridging-Header.h"; sourceTree = "<group>"; };
 		418D9C761C18C5F60005CCDC /* AnimatedStartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedStartButton.swift; sourceTree = "<group>"; };
 		418D9C7D1C18CB130005CCDC /* walktracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = walktracker.xcdatamodel; sourceTree = "<group>"; };
-		418D9C801C18CB840005CCDC /* Walk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
+		418D9C931C18D0530005CCDC /* Walk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				418D9C7C1C18CB130005CCDC /* walktracker.xcdatamodeld */,
+				418D9C931C18D0530005CCDC /* Walk.swift */,
 				418D9C751C18B5A90005CCDC /* CMPE297Health-Bridging-Header.h */,
 				4171A3EB1C17ECC800DDC3AF /* AppDelegate.swift */,
 				4171A3ED1C17ECC800DDC3AF /* ViewController.swift */,
@@ -136,7 +137,6 @@
 				418D9C711C18B2AC0005CCDC /* MapViewController.swift */,
 				418D9C731C18B3280005CCDC /* WalksViewController.swift */,
 				418D9C761C18C5F60005CCDC /* AnimatedStartButton.swift */,
-				418D9C801C18CB840005CCDC /* Walk.swift */,
 			);
 			path = CMPE297Health;
 			sourceTree = "<group>";
@@ -291,8 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				418D9C7E1C18CB130005CCDC /* walktracker.xcdatamodeld in Sources */,
-				418D9C821C18CB840005CCDC /* Walk.swift in Sources */,
+				418D9C8D1C18CE500005CCDC /* walktracker.xcdatamodeld in Sources */,
+				418D9C951C18D0530005CCDC /* Walk.swift in Sources */,
 				418D9C701C18B26F0005CCDC /* WalkStore.swift in Sources */,
 				418D9C741C18B3280005CCDC /* WalksViewController.swift in Sources */,
 				418D9C721C18B2AC0005CCDC /* MapViewController.swift in Sources */,

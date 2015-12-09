@@ -16,7 +16,8 @@ class Walk: NSManagedObject {
     @NSManaged var startTimestamp: NSDate
     @NSManaged var endTimestamp: NSDate
     @NSManaged var locations: Array<CLLocation>
-    
+
+// Insert code here to add functionality to your managed object subclass
     var duration: NSTimeInterval {
         get {
             return endTimestamp.timeIntervalSinceDate(startTimestamp)
@@ -38,5 +39,5 @@ class Walk: NSManagedObject {
         startTimestamp = NSDate()
         distance = 0.0
     }
-    
+
 }
