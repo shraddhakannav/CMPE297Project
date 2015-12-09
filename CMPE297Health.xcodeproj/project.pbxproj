@@ -14,6 +14,14 @@
 		4171A3F61C17ECC800DDC3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4171A3F41C17ECC800DDC3AF /* LaunchScreen.storyboard */; };
 		4171A4011C17ECC800DDC3AF /* CMPE297HealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171A4001C17ECC800DDC3AF /* CMPE297HealthTests.swift */; };
 		4171A40C1C17ECC800DDC3AF /* CMPE297HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171A40B1C17ECC800DDC3AF /* CMPE297HealthUITests.swift */; };
+		4171A41A1C17EF1D00DDC3AF /* health_wellness-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4171A4191C17EF1D00DDC3AF /* health_wellness-1.jpg */; };
+		4171A41C1C17EFC800DDC3AF /* main_home1_770x350.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4171A41B1C17EFC800DDC3AF /* main_home1_770x350.jpg */; };
+		4171A41E1C17FB9000DDC3AF /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171A41D1C17FB9000DDC3AF /* PageContentViewController.swift */; };
+		4171A4201C17FFB300DDC3AF /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171A41F1C17FFB300DDC3AF /* PageViewController.swift */; };
+		4171A42D1C1806CC00DDC3AF /* long1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4171A4291C1806CC00DDC3AF /* long1.png */; };
+		4171A42E1C1806CC00DDC3AF /* long2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4171A42A1C1806CC00DDC3AF /* long2.png */; };
+		4171A42F1C1806CC00DDC3AF /* long3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4171A42B1C1806CC00DDC3AF /* long3.png */; };
+		4171A4301C1806CC00DDC3AF /* long4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4171A42C1C1806CC00DDC3AF /* long4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		4171A4071C17ECC800DDC3AF /* CMPE297HealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMPE297HealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4171A40B1C17ECC800DDC3AF /* CMPE297HealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMPE297HealthUITests.swift; sourceTree = "<group>"; };
 		4171A40D1C17ECC800DDC3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4171A4191C17EF1D00DDC3AF /* health_wellness-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "health_wellness-1.jpg"; sourceTree = "<group>"; };
+		4171A41B1C17EFC800DDC3AF /* main_home1_770x350.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_home1_770x350.jpg; sourceTree = "<group>"; };
+		4171A41D1C17FB9000DDC3AF /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		4171A41F1C17FFB300DDC3AF /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		4171A4291C1806CC00DDC3AF /* long1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = long1.png; sourceTree = "<group>"; };
+		4171A42A1C1806CC00DDC3AF /* long2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = long2.png; sourceTree = "<group>"; };
+		4171A42B1C1806CC00DDC3AF /* long3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = long3.png; sourceTree = "<group>"; };
+		4171A42C1C1806CC00DDC3AF /* long4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = long4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +117,16 @@
 				4171A3ED1C17ECC800DDC3AF /* ViewController.swift */,
 				4171A3EF1C17ECC800DDC3AF /* Main.storyboard */,
 				4171A3F21C17ECC800DDC3AF /* Assets.xcassets */,
+				4171A4291C1806CC00DDC3AF /* long1.png */,
+				4171A42A1C1806CC00DDC3AF /* long2.png */,
+				4171A42B1C1806CC00DDC3AF /* long3.png */,
+				4171A42C1C1806CC00DDC3AF /* long4.png */,
+				4171A41B1C17EFC800DDC3AF /* main_home1_770x350.jpg */,
+				4171A4191C17EF1D00DDC3AF /* health_wellness-1.jpg */,
 				4171A3F41C17ECC800DDC3AF /* LaunchScreen.storyboard */,
 				4171A3F71C17ECC800DDC3AF /* Info.plist */,
+				4171A41D1C17FB9000DDC3AF /* PageContentViewController.swift */,
+				4171A41F1C17FFB300DDC3AF /* PageViewController.swift */,
 			);
 			path = CMPE297Health;
 			sourceTree = "<group>";
@@ -229,9 +253,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4171A41A1C17EF1D00DDC3AF /* health_wellness-1.jpg in Resources */,
+				4171A42D1C1806CC00DDC3AF /* long1.png in Resources */,
+				4171A42E1C1806CC00DDC3AF /* long2.png in Resources */,
 				4171A3F61C17ECC800DDC3AF /* LaunchScreen.storyboard in Resources */,
+				4171A4301C1806CC00DDC3AF /* long4.png in Resources */,
+				4171A41C1C17EFC800DDC3AF /* main_home1_770x350.jpg in Resources */,
 				4171A3F31C17ECC800DDC3AF /* Assets.xcassets in Resources */,
 				4171A3F11C17ECC800DDC3AF /* Main.storyboard in Resources */,
+				4171A42F1C1806CC00DDC3AF /* long3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4171A41E1C17FB9000DDC3AF /* PageContentViewController.swift in Sources */,
 				4171A3EE1C17ECC800DDC3AF /* ViewController.swift in Sources */,
 				4171A3EC1C17ECC800DDC3AF /* AppDelegate.swift in Sources */,
+				4171A4201C17FFB300DDC3AF /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
