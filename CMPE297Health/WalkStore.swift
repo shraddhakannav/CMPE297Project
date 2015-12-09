@@ -38,26 +38,7 @@ class WalkStore: NSObject {
         if (currentWalk == nil) {
             currentWalk = NSEntityDescription.insertNewObjectForEntityForName("Walk", inManagedObjectContext: self.managedObjectContext!) as? Walk
             allWalks.append(currentWalk!)
-        }
-        
-        
-    }
-    
-    func speak() {
-        var speechsynt: AVSpeechSynthesizer = AVSpeechSynthesizer() //initialize the synthesizer
-        
-        //workaround for iOS8 Bug
-        
-        var beforeSpeechString : String = " "
-        var beforeSpeech:AVSpeechUtterance = AVSpeechUtterance(string: beforeSpeechString)
-        speechsynt.speakUtterance(beforeSpeech)
-        //realstring to speak
-        var speechString : String = "Hello World! This is a Speech from iphone. Start walking"
-        
-        var nextSpeech:AVSpeechUtterance = AVSpeechUtterance(string: speechString)
-        nextSpeech.rate = AVSpeechUtteranceMinimumSpeechRate; // some Configs :-)
-        speechsynt.speakUtterance(nextSpeech) //let me Speak!
-        //Debugging
+        }        
     }
     
     func stopWalk() {
@@ -67,7 +48,6 @@ class WalkStore: NSObject {
         }
         
         currentWalk = nil
-        speak()
     }
     
     func indexOfCurrentWalk() -> Int? {

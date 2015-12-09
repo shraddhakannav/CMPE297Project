@@ -17,12 +17,13 @@
 		4171A41A1C17EF1D00DDC3AF /* health_wellness-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4171A4191C17EF1D00DDC3AF /* health_wellness-1.jpg */; };
 		418D9C4F1C18A4D20005CCDC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418D9C4E1C18A4D20005CCDC /* MapKit.framework */; };
 		418D9C511C18A4D90005CCDC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418D9C501C18A4D90005CCDC /* AVFoundation.framework */; };
-		418D9C5C1C18AFBE0005CCDC /* walktracker.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C561C18A6280005CCDC /* walktracker.xcdatamodel */; };
 		418D9C601C18AFDB0005CCDC /* OptionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C4C1C1824550005CCDC /* OptionsListViewController.swift */; };
-		418D9C6E1C18B2460005CCDC /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C6C1C18B2460005CCDC /* Walk.swift */; };
 		418D9C701C18B26F0005CCDC /* WalkStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C6F1C18B26E0005CCDC /* WalkStore.swift */; };
 		418D9C721C18B2AC0005CCDC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C711C18B2AC0005CCDC /* MapViewController.swift */; };
 		418D9C741C18B3280005CCDC /* WalksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C731C18B3280005CCDC /* WalksViewController.swift */; };
+		418D9C771C18C5F60005CCDC /* AnimatedStartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C761C18C5F60005CCDC /* AnimatedStartButton.swift */; };
+		418D9C7E1C18CB130005CCDC /* walktracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C7C1C18CB130005CCDC /* walktracker.xcdatamodeld */; };
+		418D9C821C18CB840005CCDC /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C801C18CB840005CCDC /* Walk.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,12 +61,13 @@
 		418D9C4C1C1824550005CCDC /* OptionsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsListViewController.swift; sourceTree = "<group>"; };
 		418D9C4E1C18A4D20005CCDC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		418D9C501C18A4D90005CCDC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		418D9C561C18A6280005CCDC /* walktracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = walktracker.xcdatamodel; sourceTree = "<group>"; };
-		418D9C6C1C18B2460005CCDC /* Walk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
 		418D9C6F1C18B26E0005CCDC /* WalkStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkStore.swift; sourceTree = "<group>"; };
 		418D9C711C18B2AC0005CCDC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		418D9C731C18B3280005CCDC /* WalksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalksViewController.swift; sourceTree = "<group>"; };
 		418D9C751C18B5A90005CCDC /* CMPE297Health-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CMPE297Health-Bridging-Header.h"; sourceTree = "<group>"; };
+		418D9C761C18C5F60005CCDC /* AnimatedStartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedStartButton.swift; sourceTree = "<group>"; };
+		418D9C7D1C18CB130005CCDC /* walktracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = walktracker.xcdatamodel; sourceTree = "<group>"; };
+		418D9C801C18CB840005CCDC /* Walk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,7 @@
 		4171A3EA1C17ECC800DDC3AF /* CMPE297Health */ = {
 			isa = PBXGroup;
 			children = (
-				418D9C561C18A6280005CCDC /* walktracker.xcdatamodel */,
+				418D9C7C1C18CB130005CCDC /* walktracker.xcdatamodeld */,
 				418D9C751C18B5A90005CCDC /* CMPE297Health-Bridging-Header.h */,
 				4171A3EB1C17ECC800DDC3AF /* AppDelegate.swift */,
 				4171A3ED1C17ECC800DDC3AF /* ViewController.swift */,
@@ -130,10 +132,11 @@
 				4171A3F41C17ECC800DDC3AF /* LaunchScreen.storyboard */,
 				4171A3F71C17ECC800DDC3AF /* Info.plist */,
 				418D9C4C1C1824550005CCDC /* OptionsListViewController.swift */,
-				418D9C6C1C18B2460005CCDC /* Walk.swift */,
 				418D9C6F1C18B26E0005CCDC /* WalkStore.swift */,
 				418D9C711C18B2AC0005CCDC /* MapViewController.swift */,
 				418D9C731C18B3280005CCDC /* WalksViewController.swift */,
+				418D9C761C18C5F60005CCDC /* AnimatedStartButton.swift */,
+				418D9C801C18CB840005CCDC /* Walk.swift */,
 			);
 			path = CMPE297Health;
 			sourceTree = "<group>";
@@ -288,12 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418D9C7E1C18CB130005CCDC /* walktracker.xcdatamodeld in Sources */,
+				418D9C821C18CB840005CCDC /* Walk.swift in Sources */,
 				418D9C701C18B26F0005CCDC /* WalkStore.swift in Sources */,
 				418D9C741C18B3280005CCDC /* WalksViewController.swift in Sources */,
 				418D9C721C18B2AC0005CCDC /* MapViewController.swift in Sources */,
+				418D9C771C18C5F60005CCDC /* AnimatedStartButton.swift in Sources */,
 				418D9C601C18AFDB0005CCDC /* OptionsListViewController.swift in Sources */,
-				418D9C5C1C18AFBE0005CCDC /* walktracker.xcdatamodel in Sources */,
-				418D9C6E1C18B2460005CCDC /* Walk.swift in Sources */,
 				4171A3EE1C17ECC800DDC3AF /* ViewController.swift in Sources */,
 				4171A3EC1C17ECC800DDC3AF /* AppDelegate.swift in Sources */,
 			);
@@ -548,6 +552,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		418D9C7C1C18CB130005CCDC /* walktracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				418D9C7D1C18CB130005CCDC /* walktracker.xcdatamodel */,
+			);
+			currentVersion = 418D9C7D1C18CB130005CCDC /* walktracker.xcdatamodel */;
+			path = walktracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4171A3E01C17ECC800DDC3AF /* Project object */;
 }

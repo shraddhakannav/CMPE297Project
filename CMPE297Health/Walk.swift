@@ -8,10 +8,6 @@
 
 import Foundation
 import CoreData
-
-
-import Foundation
-import CoreData
 import CoreLocation
 
 class Walk: NSManagedObject {
