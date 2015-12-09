@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arogya" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ng8-Mn-yI2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arogyavat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ng8-Mn-yI2">
                                 <rect key="frame" x="54" y="65" width="306" height="134"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="55"/>
-                                <color key="textColor" red="0.43597294938917963" green="0.36005286313337254" blue="0.41759881833421919" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.19594684994069875" green="0.67419284467713769" blue="0.60811621575012287" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="health_wellness-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7ID-s4-3G7">
@@ -78,40 +78,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdM-cI-h2V">
-                                <rect key="frame" x="12" y="504" width="390" height="63"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="long3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZcL-U9-F3D">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.13665442452844692" green="0.56677279177388717" blue="0.73063236259999997" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Water Intake">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUh-q7-Usz">
-                                <rect key="frame" x="12" y="432" width="390" height="64"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jy6-gY-qPV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZd-A0-bUW">
+                                        <rect key="frame" x="12" y="611" width="390" height="64"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.2280120349022918" green="0.23569341374308633" blue="0.73063236259999997" alpha="0.80747451241134749" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Heart Rate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUh-q7-Usz">
+                                        <rect key="frame" x="12" y="467" width="390" height="64"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.18683090891801801" green="0.73063236259999997" blue="0.72277822102832034" alpha="0.81722628546099285" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Start Walking">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="6d4-Ii-4Bm" kind="showDetail" id="qcw-M9-jgM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdM-cI-h2V">
+                                        <rect key="frame" x="12" y="540" width="390" height="63"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.13665442452844692" green="0.56677279177388717" blue="0.73063236259999997" alpha="0.8613696808510638" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Water Intake">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.18683090891801801" green="0.73063236259999997" blue="0.72277822102832034" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Start Walking">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="6d4-Ii-4Bm" kind="showDetail" id="qcw-M9-jgM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZd-A0-bUW">
-                                <rect key="frame" x="12" y="575" width="390" height="64"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.2280120349022918" green="0.23569341374308633" blue="0.73063236259999997" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Heart Rate">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arogyavat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcI-te-p9U">
-                                <rect key="frame" x="54" y="154" width="306" height="134"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="55"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="0.89682159529483862" green="0.87972828456787133" blue="0.90059173211169274" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.59334053860000002" green="0.63155981049999999" blue="0.73063236259999997" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
@@ -293,11 +300,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nu8-yy-VdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4lE-L1-lQf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1687" y="1269"/>
+            <point key="canvasLocation" x="1730" y="1395"/>
         </scene>
     </scenes>
     <resources>
         <image name="add_button" width="64" height="67"/>
         <image name="health_wellness-1.jpg" width="1047" height="342"/>
+        <image name="long3.jpg" width="1080" height="1920"/>
     </resources>
 </document>

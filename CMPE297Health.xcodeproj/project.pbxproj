@@ -24,6 +24,7 @@
 		418D9C771C18C5F60005CCDC /* AnimatedStartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C761C18C5F60005CCDC /* AnimatedStartButton.swift */; };
 		418D9C8D1C18CE500005CCDC /* walktracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C7C1C18CB130005CCDC /* walktracker.xcdatamodeld */; };
 		418D9C951C18D0530005CCDC /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C931C18D0530005CCDC /* Walk.swift */; };
+		418D9C971C18D67C0005CCDC /* long3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 418D9C961C18D67C0005CCDC /* long3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		418D9C761C18C5F60005CCDC /* AnimatedStartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedStartButton.swift; sourceTree = "<group>"; };
 		418D9C7D1C18CB130005CCDC /* walktracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = walktracker.xcdatamodel; sourceTree = "<group>"; };
 		418D9C931C18D0530005CCDC /* Walk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
+		418D9C961C18D67C0005CCDC /* long3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = long3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				4171A3ED1C17ECC800DDC3AF /* ViewController.swift */,
 				4171A3EF1C17ECC800DDC3AF /* Main.storyboard */,
 				4171A3F21C17ECC800DDC3AF /* Assets.xcassets */,
+				418D9C961C18D67C0005CCDC /* long3.jpg */,
 				4171A4191C17EF1D00DDC3AF /* health_wellness-1.jpg */,
 				4171A3F41C17ECC800DDC3AF /* LaunchScreen.storyboard */,
 				4171A3F71C17ECC800DDC3AF /* Info.plist */,
@@ -267,6 +270,7 @@
 				4171A3F61C17ECC800DDC3AF /* LaunchScreen.storyboard in Resources */,
 				4171A3F31C17ECC800DDC3AF /* Assets.xcassets in Resources */,
 				4171A3F11C17ECC800DDC3AF /* Main.storyboard in Resources */,
+				418D9C971C18D67C0005CCDC /* long3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
