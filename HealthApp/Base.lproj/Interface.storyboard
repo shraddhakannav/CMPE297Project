@@ -21,7 +21,7 @@
                             <color key="backgroundColor" red="0.13665442450000001" green="0.56677279179999995" blue="0.73063236259999997" alpha="0.86136968089999999" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" pointSize="18"/>
                         </button>
-                        <button width="1" height="45.5" alignment="left" title="Heart bit" id="xvl-dh-C2C">
+                        <button width="1" height="45.5" alignment="left" title="Heart beat" id="xvl-dh-C2C">
                             <color key="backgroundColor" red="0.22801203489999999" green="0.23569341369999999" blue="0.73063236259999997" alpha="0.80747451240000001" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" pointSize="18"/>
                         </button>
