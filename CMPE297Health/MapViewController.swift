@@ -9,15 +9,40 @@
 import UIKit
 import MapKit
 import CoreLocation
+import WatchConnectivity
+import AVFoundation
 
-class MapViewController: UIViewController, CLLocationManagerDelegate, UIToolbarDelegate, MKMapViewDelegate {
+class MapViewController: UIViewController, WCSessionDelegate, CLLocationManagerDelegate, UIToolbarDelegate, MKMapViewDelegate {
+    
     var locationManager: CLLocationManager!
     
     let walkStore: WalkStore = WalkStore.sharedInstance
     
     var isTracking: Bool = false
     
+    @IBOutlet weak var mapButton: AnimatedStartButton!
     @IBOutlet weak var mapView: MKMapView!
+    
+    private let session: WCSession? = WCSession.isSupported() ? WCSession.defaultSession() : nil
+    
+    var synth = AVSpeechSynthesizer()
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        configureWCSession()
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+        configureWCSession()
+    }
+    
+    private func configureWCSession() {
+        session?.delegate = self;
+        session?.activateSession()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -184,5 +209,38 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIToolbarD
     @IBAction func unwindToMapsView(segue:UIStoryboardSegue) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    func textToSpeech(sender: String) {
+        let myUtterance = AVSpeechUtterance(string:sender)
+        myUtterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        myUtterance.rate = 0.5
+        synth.speakUtterance(myUtterance)
+    }
+    
+    func textToSpeech() {
+        let myUtterance = AVSpeechUtterance(string: "Hello world!")
+        myUtterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        myUtterance.rate = 0.5
+        synth.speakUtterance(myUtterance)
+    }
+    
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        
+        //Use this to update the UI instantaneously (otherwise, takes a little while)
+        dispatch_async(dispatch_get_main_queue()) {
+            
+            if let counterValue = message["counterValue"] as? Int {
+                
+                NSLog("counter: %d",counterValue)
+                if self.isTracking {
+                    self.textToSpeech("Stopping your run")
+                } else {
+                    self.textToSpeech("Starting your run")
+                }
+                self.walkPressed(self.mapButton)
+            }
+        }
+    }
+
 }
 

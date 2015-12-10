@@ -78,13 +78,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="long3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZcL-U9-F3D">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <animations/>
-                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jy6-gY-qPV">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="long3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZcL-U9-F3D">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                        <animations/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OoM-gG-LFh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8Q-hb-cLn">
+                                                <rect key="frame" x="12" y="611" width="390" height="64"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.22801203489999999" green="0.23569341369999999" blue="0.73063236259999997" alpha="0.80747451240000001" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Heart Rate">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpN-SO-cEv">
+                                                <rect key="frame" x="12" y="467" width="390" height="64"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.18683090890000001" green="0.73063236259999997" blue="0.722778221" alpha="0.81722628549999998" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Start Walking">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3Q-RX-uPl">
+                                                <rect key="frame" x="12" y="540" width="390" height="63"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.13665442450000001" green="0.56677279179999995" blue="0.73063236259999997" alpha="0.86136968089999999" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Water Intake">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.86071097269999997" green="0.84117412290000004" blue="0.86189736039999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZd-A0-bUW">
                                         <rect key="frame" x="12" y="611" width="390" height="64"/>
                                         <animations/>
@@ -117,7 +151,7 @@
                                     </button>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.89682159529483862" green="0.87972828456787133" blue="0.90059173211169274" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.86071097271301455" green="0.8411741228845232" blue="0.86189736038394404" alpha="0.5" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <animations/>
@@ -141,7 +175,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="319" y="1496"/>
+            <point key="canvasLocation" x="799" y="364"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="aV1-Ow-slp">
@@ -174,7 +208,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="llP-2u-E1a"/>
-                                    <barButtonItem systemItem="add" id="MSS-qy-C5w">
+                                    <barButtonItem systemItem="trash" id="MSS-qy-C5w">
                                         <color key="tintColor" red="0.61176470589999998" green="0.1529411765" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="trashPressed:" destination="6d4-Ii-4Bm" id="PMo-Qt-H5C"/>
@@ -212,12 +246,13 @@
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="mapButton" destination="g9q-HI-5oE" id="jkG-BG-l7G"/>
                         <outlet property="mapView" destination="iUA-Ga-ZJq" id="qOV-cG-fEv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDa-sQ-lsi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1034" y="1395"/>
+            <point key="canvasLocation" x="826" y="1295"/>
         </scene>
         <!--Walks View Controller-->
         <scene sceneID="Oxs-Cw-eI9">
@@ -300,7 +335,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nu8-yy-VdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4lE-L1-lQf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1730" y="1395"/>
+            <point key="canvasLocation" x="1574" y="1295"/>
         </scene>
     </scenes>
     <resources>

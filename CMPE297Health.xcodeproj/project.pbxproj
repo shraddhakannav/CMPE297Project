@@ -25,6 +25,15 @@
 		418D9C8D1C18CE500005CCDC /* walktracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C7C1C18CB130005CCDC /* walktracker.xcdatamodeld */; };
 		418D9C951C18D0530005CCDC /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9C931C18D0530005CCDC /* Walk.swift */; };
 		418D9C971C18D67C0005CCDC /* long3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 418D9C961C18D67C0005CCDC /* long3.jpg */; };
+		418D9C9E1C18D9FD0005CCDC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418D9C9C1C18D9FD0005CCDC /* Interface.storyboard */; };
+		418D9CA01C18D9FD0005CCDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418D9C9F1C18D9FD0005CCDC /* Assets.xcassets */; };
+		418D9CA71C18D9FD0005CCDC /* HealthApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 418D9CA61C18D9FD0005CCDC /* HealthApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		418D9CAE1C18D9FD0005CCDC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9CAD1C18D9FD0005CCDC /* InterfaceController.swift */; };
+		418D9CB01C18D9FD0005CCDC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9CAF1C18D9FD0005CCDC /* ExtensionDelegate.swift */; };
+		418D9CB21C18D9FD0005CCDC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9CB11C18D9FD0005CCDC /* NotificationController.swift */; };
+		418D9CB41C18D9FD0005CCDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418D9CB31C18D9FD0005CCDC /* Assets.xcassets */; };
+		418D9CB91C18D9FD0005CCDC /* HealthApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 418D9C9A1C18D9FD0005CCDC /* HealthApp.app */; };
+		418D9CC21C18DBC90005CCDC /* MapInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D9CC11C18DBC90005CCDC /* MapInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +51,46 @@
 			remoteGlobalIDString = 4171A3E71C17ECC800DDC3AF;
 			remoteInfo = CMPE297Health;
 		};
+		418D9CA81C18D9FD0005CCDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4171A3E01C17ECC800DDC3AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 418D9CA51C18D9FD0005CCDC;
+			remoteInfo = "HealthApp Extension";
+		};
+		418D9CB61C18D9FD0005CCDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4171A3E01C17ECC800DDC3AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 418D9C991C18D9FD0005CCDC;
+			remoteInfo = HealthApp;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		418D9CB81C18D9FD0005CCDC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				418D9CB91C18D9FD0005CCDC /* HealthApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418D9CBD1C18D9FD0005CCDC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				418D9CA71C18D9FD0005CCDC /* HealthApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4171A3E81C17ECC800DDC3AF /* CMPE297Health.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMPE297Health.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +118,18 @@
 		418D9C7D1C18CB130005CCDC /* walktracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = walktracker.xcdatamodel; sourceTree = "<group>"; };
 		418D9C931C18D0530005CCDC /* Walk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
 		418D9C961C18D67C0005CCDC /* long3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = long3.jpg; sourceTree = "<group>"; };
+		418D9C9A1C18D9FD0005CCDC /* HealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		418D9C9D1C18D9FD0005CCDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		418D9C9F1C18D9FD0005CCDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		418D9CA11C18D9FD0005CCDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418D9CA61C18D9FD0005CCDC /* HealthApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HealthApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		418D9CAC1C18D9FD0005CCDC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		418D9CAD1C18D9FD0005CCDC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		418D9CAF1C18D9FD0005CCDC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		418D9CB11C18D9FD0005CCDC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		418D9CB31C18D9FD0005CCDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		418D9CB51C18D9FD0005CCDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418D9CC11C18DBC90005CCDC /* MapInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +156,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		418D9CA31C18D9FD0005CCDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -107,6 +174,8 @@
 				4171A3EA1C17ECC800DDC3AF /* CMPE297Health */,
 				4171A3FF1C17ECC800DDC3AF /* CMPE297HealthTests */,
 				4171A40A1C17ECC800DDC3AF /* CMPE297HealthUITests */,
+				418D9C9B1C18D9FD0005CCDC /* HealthApp */,
+				418D9CAA1C18D9FD0005CCDC /* HealthApp Extension */,
 				4171A3E91C17ECC800DDC3AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,6 +186,8 @@
 				4171A3E81C17ECC800DDC3AF /* CMPE297Health.app */,
 				4171A3FC1C17ECC800DDC3AF /* CMPE297HealthTests.xctest */,
 				4171A4071C17ECC800DDC3AF /* CMPE297HealthUITests.xctest */,
+				418D9C9A1C18D9FD0005CCDC /* HealthApp.app */,
+				418D9CA61C18D9FD0005CCDC /* HealthApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +233,38 @@
 			path = CMPE297HealthUITests;
 			sourceTree = "<group>";
 		};
+		418D9C9B1C18D9FD0005CCDC /* HealthApp */ = {
+			isa = PBXGroup;
+			children = (
+				418D9C9C1C18D9FD0005CCDC /* Interface.storyboard */,
+				418D9C9F1C18D9FD0005CCDC /* Assets.xcassets */,
+				418D9CA11C18D9FD0005CCDC /* Info.plist */,
+			);
+			path = HealthApp;
+			sourceTree = "<group>";
+		};
+		418D9CAA1C18D9FD0005CCDC /* HealthApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				418D9CAD1C18D9FD0005CCDC /* InterfaceController.swift */,
+				418D9CC11C18DBC90005CCDC /* MapInterfaceController.swift */,
+				418D9CAF1C18D9FD0005CCDC /* ExtensionDelegate.swift */,
+				418D9CB11C18D9FD0005CCDC /* NotificationController.swift */,
+				418D9CB31C18D9FD0005CCDC /* Assets.xcassets */,
+				418D9CB51C18D9FD0005CCDC /* Info.plist */,
+				418D9CAB1C18D9FD0005CCDC /* Supporting Files */,
+			);
+			path = "HealthApp Extension";
+			sourceTree = "<group>";
+		};
+		418D9CAB1C18D9FD0005CCDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				418D9CAC1C18D9FD0005CCDC /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,10 +275,12 @@
 				4171A3E41C17ECC800DDC3AF /* Sources */,
 				4171A3E51C17ECC800DDC3AF /* Frameworks */,
 				4171A3E61C17ECC800DDC3AF /* Resources */,
+				418D9CB81C18D9FD0005CCDC /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				418D9CB71C18D9FD0005CCDC /* PBXTargetDependency */,
 			);
 			name = CMPE297Health;
 			productName = CMPE297Health;
@@ -218,6 +323,40 @@
 			productReference = 4171A4071C17ECC800DDC3AF /* CMPE297HealthUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		418D9C991C18D9FD0005CCDC /* HealthApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418D9CBE1C18D9FD0005CCDC /* Build configuration list for PBXNativeTarget "HealthApp" */;
+			buildPhases = (
+				418D9C981C18D9FD0005CCDC /* Resources */,
+				418D9CBD1C18D9FD0005CCDC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				418D9CA91C18D9FD0005CCDC /* PBXTargetDependency */,
+			);
+			name = HealthApp;
+			productName = HealthApp;
+			productReference = 418D9C9A1C18D9FD0005CCDC /* HealthApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		418D9CA51C18D9FD0005CCDC /* HealthApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418D9CBA1C18D9FD0005CCDC /* Build configuration list for PBXNativeTarget "HealthApp Extension" */;
+			buildPhases = (
+				418D9CA21C18D9FD0005CCDC /* Sources */,
+				418D9CA31C18D9FD0005CCDC /* Frameworks */,
+				418D9CA41C18D9FD0005CCDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HealthApp Extension";
+			productName = "HealthApp Extension";
+			productReference = 418D9CA61C18D9FD0005CCDC /* HealthApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -239,6 +378,12 @@
 						CreatedOnToolsVersion = 7.1.1;
 						TestTargetID = 4171A3E71C17ECC800DDC3AF;
 					};
+					418D9C991C18D9FD0005CCDC = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					418D9CA51C18D9FD0005CCDC = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 				};
 			};
 			buildConfigurationList = 4171A3E31C17ECC800DDC3AF /* Build configuration list for PBXProject "CMPE297Health" */;
@@ -257,6 +402,8 @@
 				4171A3E71C17ECC800DDC3AF /* CMPE297Health */,
 				4171A3FB1C17ECC800DDC3AF /* CMPE297HealthTests */,
 				4171A4061C17ECC800DDC3AF /* CMPE297HealthUITests */,
+				418D9C991C18D9FD0005CCDC /* HealthApp */,
+				418D9CA51C18D9FD0005CCDC /* HealthApp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -285,6 +432,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418D9C981C18D9FD0005CCDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418D9CA01C18D9FD0005CCDC /* Assets.xcassets in Resources */,
+				418D9C9E1C18D9FD0005CCDC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418D9CA41C18D9FD0005CCDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418D9CB41C18D9FD0005CCDC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +487,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		418D9CA21C18D9FD0005CCDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418D9CB21C18D9FD0005CCDC /* NotificationController.swift in Sources */,
+				418D9CB01C18D9FD0005CCDC /* ExtensionDelegate.swift in Sources */,
+				418D9CC21C18DBC90005CCDC /* MapInterfaceController.swift in Sources */,
+				418D9CAE1C18D9FD0005CCDC /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -335,6 +510,16 @@
 			isa = PBXTargetDependency;
 			target = 4171A3E71C17ECC800DDC3AF /* CMPE297Health */;
 			targetProxy = 4171A4081C17ECC800DDC3AF /* PBXContainerItemProxy */;
+		};
+		418D9CA91C18D9FD0005CCDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 418D9CA51C18D9FD0005CCDC /* HealthApp Extension */;
+			targetProxy = 418D9CA81C18D9FD0005CCDC /* PBXContainerItemProxy */;
+		};
+		418D9CB71C18D9FD0005CCDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 418D9C991C18D9FD0005CCDC /* HealthApp */;
+			targetProxy = 418D9CB61C18D9FD0005CCDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -353,6 +538,14 @@
 				4171A3F51C17ECC800DDC3AF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		418D9C9C1C18D9FD0005CCDC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				418D9C9D1C18D9FD0005CCDC /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -516,6 +709,66 @@
 			};
 			name = Release;
 		};
+		418D9CBB1C18D9FD0005CCDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HealthApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shraddhakannav.CMPE297Health.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		418D9CBC1C18D9FD0005CCDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HealthApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shraddhakannav.CMPE297Health.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		418D9CBF1C18D9FD0005CCDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HealthApp_Extension;
+				INFOPLIST_FILE = HealthApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = shraddhakannav.CMPE297Health.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		418D9CC01C18D9FD0005CCDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HealthApp_Extension;
+				INFOPLIST_FILE = HealthApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = shraddhakannav.CMPE297Health.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -554,6 +807,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		418D9CBA1C18D9FD0005CCDC /* Build configuration list for PBXNativeTarget "HealthApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418D9CBB1C18D9FD0005CCDC /* Debug */,
+				418D9CBC1C18D9FD0005CCDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		418D9CBE1C18D9FD0005CCDC /* Build configuration list for PBXNativeTarget "HealthApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418D9CBF1C18D9FD0005CCDC /* Debug */,
+				418D9CC01C18D9FD0005CCDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

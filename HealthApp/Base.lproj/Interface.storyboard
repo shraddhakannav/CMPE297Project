@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HealthApp" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Track Me" id="3Ag-4T-ghT">
+                            <color key="backgroundColor" red="0.18683090890000001" green="0.73063236259999997" blue="0.722778221" alpha="0.81722628549999998" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="vfD-x9-Ksd" kind="modal" identifier="trackme" id="iM8-rc-BQU"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Water Intake" id="2lU-hT-oRt">
+                            <color key="backgroundColor" red="0.13665442450000001" green="0.56677279179999995" blue="0.73063236259999997" alpha="0.86136968089999999" colorSpace="calibratedRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="Heart bit" id="xvl-dh-C2C">
+                            <color key="backgroundColor" red="0.22801203489999999" green="0.23569341369999999" blue="0.73063236259999997" alpha="0.80747451240000001" colorSpace="calibratedRGB"/>
+                        </button>
+                        <dateLabel width="135.5" height="19.5" alignment="left" textAlignment="center" id="hIe-3n-W8I">
+                            <dateFormatterStyle key="dateStyle" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--MapInterfaceController-->
+        <scene sceneID="AmW-FE-yYv">
+            <objects>
+                <controller identifier="MapInterfaceController" id="vfD-x9-Ksd" customClass="MapInterfaceController" customModule="HealthApp_Extension">
+                    <items>
+                        <button width="1" height="43.5" alignment="left" title="Start my walk" id="Ww0-AX-t2X">
+                            <color key="backgroundColor" red="1" green="0.31801058999999998" blue="0.33686474160000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="startButtonPressed" destination="vfD-x9-Ksd" id="rck-Zb-SI7"/>
+                            </connections>
+                        </button>
+                        <map height="104" alignment="left" id="Ldt-hI-kMg"/>
+                    </items>
+                    <connections>
+                        <outlet property="mapObject" destination="Ldt-hI-kMg" id="LjH-9F-KOv"/>
+                        <outlet property="startStopButton" destination="Ww0-AX-t2X" id="qsR-zb-XGI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="198.25"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="HealthApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
