@@ -18,6 +18,7 @@ class MapInterfaceController: WKInterfaceController, CLLocationManagerDelegate, 
     
     var locationManager: CLLocationManager = CLLocationManager()
     var mapLocation: CLLocationCoordinate2D?
+    var isWalking = false
     
     private var counter = 0
     
@@ -81,15 +82,23 @@ class MapInterfaceController: WKInterfaceController, CLLocationManagerDelegate, 
         mapObject.setRegion(region)
     }
     
+    
     @IBAction func startButtonPressed() {
         let applicationData = ["counterValue" : counter]
+        
+        if self.isWalking {
+            self.startStopButton.setTitle("Start walk")
+        } else {
+            self.startStopButton.setTitle("Stop")
+        }
+        self.isWalking = !self.isWalking
         
         // The paired iPhone has to be connected via Bluetooth.
         if let session = session where session.reachable {
             session.sendMessage(applicationData,
                 replyHandler: { replyData in
                     // handle reply from iPhone app here
-                     NSLog("watch reply counter: %d", self.counter)
+                    NSLog("watch reply counter: %d", self.counter)
                     print(replyData)
                 }, errorHandler: { error in
                     // catch any errors here
